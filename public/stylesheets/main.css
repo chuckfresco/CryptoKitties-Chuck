@@ -79,15 +79,21 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+
 }
 
 
 .footer{
     margin-left: 2px;
     margin-left: 2px;
+    height:40px;
 
 }
 
+.margin-top-10{
+    margin-top: 10px;
+
+}
 
 .social:hover {
      -webkit-transform: scale(1.1);
