@@ -20,13 +20,13 @@
     width: 150px !important;
     height: 150px !important;
     margin: auto;
-    border: 2px solid white !important }
+    border: 2px solid  !important }
     .jumbotron .lang-logo img {
       max-width: 100% !important; }
 
 body {
 
-    background-image: url('../img/bg/nature-transparent.png');
+    background-image: url('../img/bg/nature-transparent.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -47,6 +47,32 @@ body {
     border-bottom: 0 !important;
     padding: 10px !important;
 }
+
+
+/*#sidebarTop {
+    background: #e4c049;
+    height: 5px;
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    left: 0;
+    border-right: 333.3px solid transparent;
+    border-bottom: 20px solid #e4c049;
+    background: 0 0;
+}
+*/
+
+.sidebar {
+    color: #6f6b64 !important;
+    font-size: 15px !important;
+    background: rgba(255,255,255,.95) !important;
+
+    position: relative;
+    border-left: 4px solid #e4c049 !important;
+    position: relative;
+    left: 5px;
+}
+
 
 footer {
     width: 100%;
