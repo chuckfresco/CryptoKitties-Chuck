@@ -1,28 +1,28 @@
 .jumbotron {
-  background: #4fc3ff;
-  color: white;
-  padding-bottom: 40px; }
+  background: #4fc3ff !important;
+  color: white !important;
+  padding-bottom: 40px !important; }
   .jumbotron .btn-primary {
-    background: ##ecf8ff;
-        border-color: ##ecf8ff; }
+    background: ##ecf8ff !important;
+        border-color: ##ecf8ff !important; }
     .jumbotron .btn-primary:hover {
-      background: #7646c1; }
+      background: #7646c1 !important;  }
   .jumbotron p {
-    color: #e9f7ff;
-    max-width: 75%;
-    margin: 1em auto 2em; }
+    color: #e9f7ff !important;
+    max-width: 75% !important;
+    margin: 1em auto 2em !important; }
   .navbar + .jumbotron {
-    margin-top: -20px; }
+    margin-top: -20px !important; }
   .jumbotron .lang-logo {
-    display: block;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 150px;
-    height: 150px;
+    display: block !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    width: 150px !important;
+    height: 150px !important;
     margin: auto;
-    border: 2px solid white; }
+    border: 2px solid white !important }
     .jumbotron .lang-logo img {
-      max-width: 100%; }
+      max-width: 100% !important; }
 
 body {
 
@@ -33,17 +33,65 @@ body {
 
 
 .panel {
-    color: #6f6b64;
-    font-size: 15px;
-    background: rgba(255,255,255,.95);
-    border-radius: 0;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-left: 4px solid #e4c049;
-    border-right: none;
-    border-top: 0;
-    border-bottom: 0;
-    padding: 10px;
+    color: #6f6b64 !important;
+    font-size: 15px !important;
+    background: rgba(255,255,255,.95) !important;
+    border-radius: 0 !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-left: 4px solid #e4c049 !important;
+    border-right: none !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    padding: 10px !important;
 }
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+.footer{
+    margin-left: 2px;
+    margin-left: 2px;
+
+}
+
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+ 
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }
