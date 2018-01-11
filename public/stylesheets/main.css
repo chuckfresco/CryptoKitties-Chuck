@@ -29,6 +29,7 @@ body {
     background-image: url('../img/bg/background-1.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+ 
 }
 
 html, body {
@@ -63,6 +64,31 @@ html, body {
     border-bottom: 0 !important;
     padding: 10px !important;
 }
+
+section {
+    color: #6f6b64 !important;
+    font-size: 15px !important;
+    background: rgba(255,255,255,.90) !important;
+
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 0 !important;
+
+    border-bottom-right-radius: 10px !important;
+    border-left: 4px solid #e4c049 !important;
+    border-right: none !important;
+
+    padding: 10px !important;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    
+
+
+
+    margin-bottom:10px !important;
+}
+
 
 
 /*#sidebarTop {
