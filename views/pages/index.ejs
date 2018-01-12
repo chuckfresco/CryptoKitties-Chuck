@@ -58,18 +58,18 @@
           var j = max;
           var kittyList=[
 
-              {id:405563 , name: "Beardy", color: 'mintgreen'},
-              {id:146209 , name: "Tease", color: 'gold' },
-              {id:406487 , name: "Say Cheese", color: 'gold' },
-              {id:115726 , name: "Royal Purple", color: 'topaz' },
-              {id:51808 , name: "Pumpkin", color: 'pumpkin' },
-              {id:74504 , name: "Mint Duck", color: 'mintgreen' },
-              {id:346616 , name: "Cali Cool", color: 'gold' },
-              {id:347797 , name: "Lookie Loo" , color: 'gold' }, 
-              {id:346614 , name: "Water Sprite", color: 'gold' },
-              {id:347130 , name: "Leopard", color: 'mintgreen'},
-              {id:438715 , name: "Snow", color: 'limegreen'},
-              {id:435692 , name: "Flash", color: 'gold'},
+              {id:405563 , name: "Beardy", color: 'mintgreen', special:''},
+              {id:146209 , name: "Tease", color: 'gold', special:'' },
+              {id:427475 , name: "King Manchas", color: 'strawberry', special:'Jaguar' },
+              {id:115726 , name: "Royal Purple", color: 'topaz', special:'' },
+              {id:51808 , name: "Pumpkin", color: 'pumpkin', special:'' },
+              {id:74504 , name: "Mint Duck", color: 'mintgreen', special:'' },
+              {id:346616 , name: "Cali Cool", color: 'gold', special:'' },
+              {id:347797 , name: "Lookie Loo" , color: 'gold', special:'' }, 
+              {id:346614 , name: "Water Sprite", color: 'gold', special:'' },
+              {id:347130 , name: "Leopard", color: 'mintgreen',special:''},
+              {id:438715 , name: "Snow", color: 'limegreen', special:''},
+              {id:435692 , name: "Flash", color: 'gold', special:''},
 
           ];
 
@@ -85,9 +85,9 @@
               details += "<span class=\"details\"> &#xB7; Gold<\/span>";
             } 
 
-           // if (cat.is_fancy) {
-            //  details += "<span class=\"details\"> &#xB7; Fancy<\/span>";
-           // }
+            if (kitty.special=='Jaguar') {
+              details += "<span class=\"details\"> &#xB7; Jaguar<\/span>";
+            }
               details += "<\/div>";
             if (i == 4 || i == 8) {
               cats += "<div class=\"row\">";
