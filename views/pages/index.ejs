@@ -23,10 +23,105 @@
     <!--<script src="js/bootstrap.min.js"></script> -->
   <% include ../partials/body.ejs %>
 
+
+
     <script>
     $(document).ready(function() {
+
+    (function($) {
+    $.fn.cryptoCase = function(address) {
+      const URL = 'https://api.cryptokitties.co/kitties?owner_wallet_address='
+          + address;
+      const INDIVIDUAL_URL = 'https:\/\/www.cryptokitties.co\/kitty\/';
+      var location = this;
+      const COLORS = new Object();
+        COLORS['sizzurp'] = '#c1c1ea';
+        COLORS['bubblegum'] = '#fcdede';
+        COLORS['limegreen'] = '#d9f5cb';
+        COLORS['topaz'] = '#d1eeeb';
+        COLORS['thundergrey'] = '#eee9e8';
+        COLORS['chestnut'] = '#efe1da';
+        COLORS['mintgreen'] = '#cdf5d4';
+        COLORS['pumpkin'] = '#fae1ca';
+        COLORS['gold'] = '#faf4cf';
+        COLORS['babypuke'] = '#eff1e0';
+        COLORS['strawberry'] = '#efbaba';
+      var newColors = new Object();
+      var cats = "";
+ 
+          cats += "<div class=\"container\"><div class=\"well\ wellColor\">"
+              + "<div><a href=\"https:\/\/www.cryptokitties.co\/profile\/0x730952cc677b1f432893d53cbf528baccbbf2441\/all?orderBy=current_price&orderDirection=asc\">"
+              + "<img class=\"logo\""
+              + " src=\"https:\/\/www.cryptokitties.co\/downloads\/logo.svg\">"
+              + "<\/a><\/div><div class=\"text-center\"><h4>Click on a CryptoKitty to view the current listing</h4></div><div class=\"row\">";
+          var max = 12;
+          var j = max;
+          var kittyList=[
+
+              {id:405563 , name: "Beardy", color: 'mintgreen'},
+              {id:146209 , name: "Tease", color: 'gold' },
+              {id:406487 , name: "Say Cheese", color: 'gold' },
+              {id:115726 , name: "Royal Purple", color: 'topaz' },
+              {id:51808 , name: "Pumpkin", color: 'pumpkin' },
+              {id:74504 , name: "Mint Duck", color: 'mintgreen' },
+              {id:346616 , name: "Cali Cool", color: 'gold' },
+              {id:347797 , name: "Lookie Loo" , color: 'gold' }, 
+              {id:346614 , name: "Water Sprite", color: 'gold' },
+              {id:347130 , name: "Leopard", color: 'mintgreen'},
+              {id:438715 , name: "Snow", color: 'limegreen'},
+              {id:435692 , name: "Flash", color: 'gold'},
+
+          ];
+
+          var address2="0x06012c8cf97bead5deae237070f9587f8e7a266d"
+          for (i = 0; i < max; i++) {
+           // var cat = response.kitties[i];
+            var kitty = kittyList[i];
+            var details = "";
+            details += "<div class=\"textbox\" align=\"center\">"
+                + "<span class=\"kittyTextID\"><b>"
+                + kitty.name + "</b><\/span><span class=\"details\"> &#xB7; <\/span>";
+            if (kitty.color == 'gold') {
+              details += "<span class=\"details\"> &#xB7; Gold<\/span>";
+            } 
+
+           // if (cat.is_fancy) {
+            //  details += "<span class=\"details\"> &#xB7; Fancy<\/span>";
+           // }
+              details += "<\/div>";
+            if (i == 4 || i == 8) {
+              cats += "<div class=\"row\">";
+            }
+            cats += "<div class=\"col-sm-6 col-md-3\" align=\"center\">"
+                + "<div class=\"kittyCard\" id=\"" + j + "\">"
+                + "<a href=\"" + INDIVIDUAL_URL + kitty.id + "\"><img class=\""
+                + "image img-responsive\" src= https://storage.googleapis.com/ck-kitty-image/" + address2 + "/" + kitty.id + ".svg"  + " id=\""
+                + i + "\"><\/a></div>" + "<div>" + details + "</div></div>";
+            if (i == 3 || i == 7 || i == 11) {
+              cats += "<\/div>";
+            }
+            newColors[i] = COLORS[kitty.color];
+            newColors[j] = COLORS[kitty.color];
+            j++;
+          }
+          cats += "</div></div>";
+          $(location).html(cats);
+          for (i = 0; i < max; i++) {
+            var change = "#" + i;
+            $(change).css('background-color', newColors[i]);
+            $(change).css('border-radius', '5px');
+          }
+          for (l = max; l < (max * 2); l++) {
+            var change2 = "#" + l;
+            $(change2).css('background-color', newColors[j]);
+          }
+        
+    };
+}(jQuery));
+
       const MY_ADDRESS = '0x730952cc677b1f432893d53cbf528baccbbf2441';
       $('#cryptokitties').cryptoCase(MY_ADDRESS);
+
     });
   </script>
 </body>
