@@ -24,12 +24,13 @@
     .jumbotron .lang-logo2 img {
       max-width: 100% !important; }
 
-body {
 
-    background-image: url('../img/bg/background-1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
- 
+body { 
+  background: url('../img/bg/background-2.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 html, body {
