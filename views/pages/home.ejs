@@ -1,6 +1,6 @@
-<% include ../partials/nav.ejs %>
 
-<div class="jumbotron text-center">
+
+<!-- <div class="jumbotron text-center">
   <div class="container">
     <a href="/" class="lang-logo2">
       <img src="/chuck-fresco-logo.jpg">
@@ -12,6 +12,8 @@
     <div class="row">
     
        <a style="margin-top:5px;" type="button" class="btn btn-lg btn-default" href="#giveaway"><span class="glyphicon glyphicon-flash"></span> Weekly Giveaways</a>
+
+       <a class="btn btn-primary" href="#" role="button">Link</a>
     
     
         <a style="margin-top:5px;" target="_blank" type="button" class="btn btn-lg btn-primary " href="https://www.cryptokitties.co/profile/0x730952cc677b1f432893d53cbf528baccbbf2441/all?orderBy=current_price&orderDirection=asc"><span class="glyphicon glyphicon-shopping-cart"></span> Kitties for Sale</a>
@@ -22,14 +24,379 @@
 </div>
 
 
-<div class="container">
-  <div class="alert alert-info" role="alert">
+-->
+
+
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <!-- Navigation -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="nav-btn btn-dark btn-lg accordion-toggle pull-left" title="Follow Us" role="tab" id="social-collapse" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></a>
+          <a id="menu-toggle" href="#" class="nav-btn btn-dark btn-lg toggle">
+            <i class="fa fa-bars" style="color:#fff;"></i>
+          </a>
+          <a id="to-top" class="btn btn-lg btn-inverse" href="#top">
+            <span class="sr-only">Toggle to Top Navigation</span>
+            <i class="fa fa-chevron-up"></i>
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse js-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                      <a class="navbar-brand" href="/">
+                            <img height="20" width="20" src="/chuck-fresco-logo.png" class="img-responsive pull-left" alt="Responsive image">
+                           CryptoKittyHub</a>
+
+                      <li class="dropdown mega-dropdown">
+
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <span class="caret"></span></a>        
+                        <ul class="dropdown-menu mega-dropdown-menu">
+                          <li class="col-sm-3">
+                            <ul>
+                              <li class="dropdown-header">Latest Videos</li>                            
+                                          <div id="menCollection" class="carousel slide" data-ride="carousel">
+                                              <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <a href="https://youtu.be/MtTyStoOLqo"><img src="/thumbnail-gene-small.jpg" class="img-responsive" alt="video 1"></a>
+                                                    <h4>CryptoKitties Guide #3</h4>
+                                                    <h5>Hidden Genes •  How to Create Fancy CryptoKitties</h5>                                        
+                                                  <!--  <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>   -->    
+                                                </div>
+                                                <div class="item">
+                                                    <a href="https://youtu.be/FT3CKqBjAfc"><img src="/thumbnail-breed-small.jpg" class="img-responsive" alt="video 2"></a>
+                                                    <h4>CryptoKitties Guide #2</h4>  
+                                                     <h5>Breeding • What Kitties are Rare </h5>                                        
+                                                   <!-- <button class="btn btn-primary" type="button">9,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button> -->       
+                                                </div>
+                                                <div class="item">
+                                                    <a href="https://youtu.be/2n5sIG_r5Gw"><img src="/thumbnail-start-small.jpg" class="img-responsive" alt="video 3"></a>
+                                                    <h4>CryptoKitties Guide #1</h4>
+                                                    <h5>Getting Started </h5>                                        
+                                                   <!-- <button class="btn btn-primary" type="button">9,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button> -->       
+                                                </div>
+                           
+                                              </div>
+                                           
+                                              <a class="left carousel-control" href="#menCollection" role="button" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                              </a>
+                                              <a class="right carousel-control" href="#menCollection" role="button" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                              </a>
+                                            </div><!-- /.carousel -->
+                                            <li class="divider"></li>
+                                            <li><a href="https://www.cryptokitties.co/profile/0x730952cc677b1f432893d53cbf528baccbbf2441/all?orderBy=current_price&orderDirection=asc">View My Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+                            </ul>
+                          </li>
+                          <li class="col-sm-3">
+                            <ul>
+                              <li class="dropdown-header">Gene Calculator</li>
+                              <li><a target="_blank" href="https://kitty.appx.hk/">AppX Gene Calculator</a></li>
+                              <li><a target="_blank" href="https://kittycalc.co/">KittyCalc</a></li>
+                              <li class="divider"></li>
+                              <li class="dropdown-header">ETH Gas Estimator</li>
+                                            <li><a arget="_blank" href="https://ethgasstation.info/">ETH Gas Station </a></li>
+                            
+                            </ul>
+                          </li>
+                          <li class="col-sm-3">
+                            <ul>
+                              <li class="dropdown-header">Market Price History</li>
+                              <li><a href="http://www.kittyexplorer.com/prices/">Kitty Explorer</a></li>
+                              <li><a href="http://www.rolldice.club/cryptokitties/index.php">RollDiceClub</a></li>
+
+                              <li class="divider"></li>
+                              <li class="dropdown-header">Kai Code Gene Analyzer</li>
+                              <li><a arget="_blank" href="http://cryptokittydex.com/kitties/163051"> CryptoKittyDex </a></li>
+                            
+                                     
+                            </ul>
+                          </li>
+                          <li class="col-sm-3">
+                            <ul>
+                              <li class="dropdown-header">Much more</li>
+                                            <li><a href="https://www.youtube.com/ChuckFresco">Chuck Fresco Youtube Channel</a></li>
+                              <li><a href="https://cryptokitties411.com/">CryptoKitties 411</a></li>
+                   
+                            </ul>
+                          </li>
+                        </ul>       
+                      </li>
+                         <!--   <li class="dropdown mega-dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <span class="caret"></span></a>        
+                        <ul class="dropdown-menu mega-dropdown-menu">
+                          <li class="col-sm-3">
+                              <ul>
+                              <li class="dropdown-header">Features</li>
+                              <li><a href="#">Auto Carousel</a></li>
+                                            <li><a href="#">Carousel Control</a></li>
+                                            <li><a href="#">Left & Right Navigation</a></li>
+                              <li><a href="#">Four Columns Grid</a></li>
+                              <li class="divider"></li>
+                              <li class="dropdown-header">Fonts</li>
+                                            <li><a href="#">Glyphicon</a></li>
+                              <li><a href="#">Google Fonts</a></li>
+                            </ul>
+                          </li>
+                          <li class="col-sm-3">
+                            <ul>
+                              <li class="dropdown-header">Plus</li>
+                              <li><a href="#">Navbar Inverse</a></li>
+                              <li><a href="#">Pull Right Elements</a></li>
+                              <li><a href="#">Coloured Headers</a></li>                            
+                              <li><a href="#">Primary Buttons & Default</a></li>              
+                            </ul>
+                          </li>
+                          <li class="col-sm-3">
+                            <ul>
+                              <li class="dropdown-header">Much more</li>
+                                            <li><a href="#">Easy to Customize</a></li>
+                              <li><a href="#">Calls to action</a></li>
+                              <li><a href="#">Custom Fonts</a></li>
+                              <li><a href="#">Slide down on Hover</a></li>                         
+                            </ul>
+                          </li>
+                                    <li class="col-sm-3">
+                              <ul>
+                              <li class="dropdown-header">Women Collection</li>                            
+                                            <div id="womenCollection" class="carousel slide" data-ride="carousel">
+                                              <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
+                                                    <h4><small>Summer dress floral prints</small></h4>                                        
+                                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
+                                                    <h4><small>Gold sandals with shiny touch</small></h4>                                        
+                                                    <button class="btn btn-primary" type="button">9,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
+                                                    <h4><small>Denin jacket stamped</small></h4>                                        
+                                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
+                                                </div>                            
+                                              </div>
+                                              
+                                              <a class="left carousel-control" href="#womenCollection" role="button" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                              </a>
+                                              <a class="right carousel-control" href="#womenCollection" role="button" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                              </a>
+                                            </div><
+                                            <li class="divider"></li>
+                                            <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+                            </ul>
+                          </li>
+                        </ul>       
+                      </li>-->
+                            <li><a href="/tutorials">Video Guides</a></li>
+
+
+                      <li><a target="_blank" href="https://www.cryptokitties.co/profile/0x730952cc677b1f432893d53cbf528baccbbf2441/all?orderBy=current_price&orderDirection=asc">Shop</a></li>
+                    </ul>
+                      <!--  <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My account <span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">My cart (0) items</a></li>
+                      </ul>-->
+                  </div><!-- /.nav-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-danger pull-right hidden-md hidden-lg toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand">
+          <a href="#top">CryptoKittyHub</strong></a>
+        </li>
+        <li>
+          <a href="/" title="Go to Top">Home</a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-info-sign"></span> Resources <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a target="_blank" href="https://kitty.appx.hk">Gene Predictor Calculator</a></li>
+            <li><a target="_blank" href="https://cryptokittydex.com/">Genome Kai Code Analyser</a></li>
+            <li><a target="_blank" href="http://www.kittyexplorer.com/prices/">Price History of Kitties</a></li>
+            <li><a target="_blank" href="https://cryptokitties411.weebly.com/helpful-info/probabilities-of-mutation">Gene Mutation Explained</a></li>
+            <li><a target="_blank" href="https://ethgasstation.info/">ETH Gas Station</a></li>
+
+          <!--  <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>-->
+          </ul>
+        </li>
+        <li>
+          <a href="/tutorials" title="Go to About Us section">Video Guides</a>
+        </li>
+        <li>
+          <a href="https://www.cryptokitties.co/profile/0x730952cc677b1f432893d53cbf528baccbbf2441/all?orderBy=current_price&orderDirection=asc" title="Navigate to Jonathan Adcox IT Resume">Shop</a>
+        </li>
+
+        <!-- Future Development
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li> -->
+        <li>
+          <a href="#" title="Our Blog">Blog</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog modal-default">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h3>Login to Hosting Portal - Control Panel</h3>
+            </div>
+            <div class="modal-body">
+              <article class="container-form center-block">
+                <!-- Form Content HERE! -->
+                <form method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal" action="https://secure.yourwebhosting.com/secureLogin" enctype="application/x-www-form-urlencoded">
+                  <fieldset>
+                    <input type='hidden' name='__token_timestamp__' value='1426572610'>
+                    <input type='hidden' name='__token_val__' value='4d96cad055fac46518825357fcb49390'>
+                    <input type="hidden" name="destination" value="http://www.yourwebhosting.com/controlpanel/index.bml">
+                    <!-- Name input-->
+                    <div class="form-group">
+                      <label class="sr-only" for="credential_0">Username: </label>
+                      <div class="col-xs-12">
+                        <input id="credential_0" name="credential_0" type="text" placeholder="Your Username" class="form-control">
+                      </div>
+                    </div>
+                    <!-- Email input-->
+                    <div class="form-group">
+                      <label class="sr-only" for="credential_1">Password: </label>
+                      <div class="col-xs-12">
+                        <input id="email" type="password" name="credential_1" value="" placeholder="Your Password" class="form-control">
+                      </div>
+                    </div>
+                    <!-- Form actions -->
+                    <div class="form-group pull-right">
+                      <div class="col-md-12 text-right">
+                        <button type="submit" name="submit" value="Sign In" class="btn btn-lg">Submit</button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </article>
+            </div>
+            <div class="modal-footer">
+              Login Problems?
+              <button type="submit" class="btn btn-dark" data-dismiss="modal" data-href="#collapseTwo" data-toggle="collapse" data-target="#collapseTwo" style="cursor:pointer;">Contact Me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside id="accordion" class="social text-vertical-center">
+      <div class="accordion-social">
+        <ul class="panel-collapse collapse in nav nav-stacked" role="tabpanel" aria-labelledby="social-collapse" id="collapseOne">
+          <li><a href="https://www.facebook.com/RealChuckFresco/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/ChuckFresco" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+           <li><a href="https://www.youtube.com/ChuckFresco" target="_blank"><i class="fa fa-lg fa-youtube"></i></a></li>
+           <li><a href="mailto:chuckfrescoofficial@gmail.com"><i id="social-em" class="fa fa-lg fa-envelope-square"></i></a></li>
+          <!--li><a href="https://github.com/blayderunner123" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+          <li><a href="https://linkedin.com/in/blayderunner123" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+          <li><a href="skype:live:soldierupdesigns?call"><i class="fa fa-lg fa-skype" target="_blank"></i></a></li>
+          <li><a href="http://stackexchange.com/users/4992378/blayderunner123" target="_blank"><i class="fa fa-lg fa-stack-exchange"></i></a></li>-->
+        </ul>
+      </div>
+    </aside>
+        
+    <div class="masthead">
+            <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="6000" id="bs-carousel">
+
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#bs-carousel" data-slide-to="1"></li>
+                    <li data-target="#bs-carousel" data-slide-to="2"></li>
+                </ol>
+      
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item slides active">
+                        <div class="slide-1"></div>
+                            <div class="hero">
+                                <hgroup>
+                                    <h1>Bringing tools to CryptoKitties players </h1>        
+                                    <h3>CryptoKitties giveaway once a week!</h3>
+                                </hgroup>
+
+                         <a class="btn btn-hero btn-lg" href="#giveaway" role="button">Weekly Giveaway</a>
+                        </div>
+                    </div>
+                    <div class="item slides">
+                        <div class="slide-2"></div>
+                            <div class="hero">        
+                                <hgroup>
+                                    <h1>Visit Our Youtube Channel</h1>        
+                                    <h3>CryptoKitties Guides and Tips</h3>
+                                </hgroup>       
+                                
+                                  <a target="_blank" class="btn btn-hero btn-lg" href="https://www.youtube.com/watch?v=MtTyStoOLqo" role="button">Latest Video</a>
+                            </div>
+                        </div>
+                        <div class="item slides">
+                            <div class="slide-3"></div>
+                                <div class="hero">        
+                                    <hgroup>
+                                        <h1>Check out our blog</h1>        
+                                        <h3>Coming Soon</h3>
+                                    </hgroup>
+                                    <button class="btn btn-hero btn-lg" role="button">Coming Soon</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+            </div>
+            </div>
+        </div>
+        
+
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+        <script>
+        $(document).ready(function(){
+        $("[rel='tooltip']").tooltip();
+      });
+    </script>
+
+
+<div class="container margin-top-10">
+  <div class="alert alert-info " role="alert">
 
     <h2> What is CryptoKitties?</h2>
     <p>CryptoKitties is a game centered around breedable, collectible, and oh-so-adorable creatures we call CryptoKitties! Each cat is one-of-a-kind and 100% owned by you; it cannot be replicated, taken away, or destroyed.
     </p>
   </div>
-  <hr>
+
+
+
+
+  <br>
   <div class="row maincontent">
     <div class="col-md-6 panel">
       <h3><span class="glyphicon glyphicon-info-sign"></span> How to Enter the Giveaway</h3>
@@ -55,12 +422,16 @@
 
       <h3><span id="giveaway" class="glyphicon glyphicon-link"></span> Weekly Giveaway </h3>
 
-<!-- Giveaway Code -->
-<a class="e-widget no-button" href="https://gleam.io/Zucql/cryptokitties-giveaway-6" rel="nofollow">CryptoKitties Giveaway 6</a>
-<script type="text/javascript" src="https://js.gleam.io/e.js" async="true"></script>
+      <!-- Giveaway Code -->
+      <a class="e-widget no-button" href="https://gleam.io/Zucql/cryptokitties-giveaway-6" rel="nofollow">CryptoKitties Giveaway 6</a>
+      <script type="text/javascript" src="https://js.gleam.io/e.js" async="true"></script>
 
 
-</div>
+    </div>
+
+
+
+
 
 </div>
 
@@ -86,5 +457,9 @@
   </div>
 
 </div>
+
+
+
+  </div>
 
 
