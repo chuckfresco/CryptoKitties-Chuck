@@ -161,7 +161,7 @@ $(document).ready(function()
   $("#menu-close").click(function(e)              //declare the element event ...'(e)' = event (shorthand)
   {
                                 // - will not work otherwise")
-    $("#sidebar-wrapper").toggleClass("active");      //instead on click event toggle active CSS element
+    $('#sidebar-wrapper').toggleClass('active',false); 
     e.preventDefault();                   //prevent the default action ("Do not remove as the code
     
     /*!
