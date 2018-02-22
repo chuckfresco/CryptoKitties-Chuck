@@ -182,6 +182,7 @@ $(document).ready(function()
         COLORS['gold'] = '#faf4cf';
         COLORS['babypuke'] = '#eff1e0';
         COLORS['strawberry'] = '#fcdede';
+        COLORS['twilightsparkle'] = '#ede3f5';
       var newColors = new Object();
       var cats = "";
  
@@ -194,18 +195,19 @@ $(document).ready(function()
           var j = max;
           var kittyList=[
 
-              {id:481046 , name: "Shock", color: 'strawberry', special:''},
+              {id:534136 , name: "Yuri Catsuki", color: 'twilightsparkle', special:'Fancy'},
               {id:146209 , name: "Tease", color: 'gold', special:'' },
-              {id:427475 , name: "King Manchas", color: 'strawberry', special:'Jaguar' },
+              {id:449138 , name: "Cloudwhite Jaguar", color: 'mintgreen', special:'Jaguar' },
               {id:115726 , name: "Royal Purple", color: 'topaz', special:'' },
               {id:472547 , name: "Henna", color: 'mintgreen', special:'' },
-              {id:74504 , name: "Mint Duck", color: 'mintgreen', special:'' },
+              {id:530965 , name: "DuCat", color: 'strawberry', special:'Fancy' },
               {id:346616 , name: "Cali Cool", color: 'gold', special:'' },
               {id:347130 , name: "Leopard", color: 'mintgreen',special:''}, 
               {id:346614 , name: "Water Sprite", color: 'gold', special:'' },
               {id:347797 , name: "Lookie Loo" , color: 'gold', special:'' },
-              {id:438715 , name: "Snow", color: 'limegreen', special:''},
-              {id:435692 , name: "Flash", color: 'gold', special:''},
+            
+              {id:529171 , name: "MisterPurrfect", color: 'strawberry', special:'Fancy'},
+                {id:438715 , name: "Snow", color: 'limegreen', special:''},
 
           ];
 
@@ -213,6 +215,7 @@ $(document).ready(function()
           for (i = 0; i < max; i++) {
            // var cat = response.kitties[i];
             var kitty = kittyList[i];
+            var fileType = ".svg";
             var details = "";
             details += "<div class=\"textbox\" align=\"center\">"
                 + "<span class=\"kittyTextID\"><b>"
@@ -224,14 +227,23 @@ $(document).ready(function()
             if (kitty.special=='Jaguar') {
               details += "<span class=\"details\"> &#xB7; Jaguar<\/span>";
             }
+
+
+            if(kitty.special=='Fancy')
+            {
+               details += "<span class=\"details\"> &#xB7; Fancy<\/span>";
+               fileType = ".png";             
+            }
               details += "<\/div>";
             if (i == 4 || i == 8) {
               cats += "<div class=\"row\">";
             }
+
+
             cats += "<div class=\"col-sm-6 col-md-3\" align=\"center\">"
                 + "<div class=\"kittyCard\" id=\"" + j + "\">"
                 + "<a href=\"" + INDIVIDUAL_URL + kitty.id + "\"><img class=\""
-                + "image img-responsive\" src= https://storage.googleapis.com/ck-kitty-image/" + address2 + "/" + kitty.id + ".svg"  + " id=\""
+                + "image img-responsive\" src= https://storage.googleapis.com/ck-kitty-image/" + address2 + "/" + kitty.id + fileType  + " id=\""
                 + i + "\"><\/a></div>" + "<div>" + details + "</div></div>";
             if (i == 3 || i == 7 || i == 11) {
               cats += "<\/div>";
