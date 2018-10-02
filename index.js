@@ -16,8 +16,10 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
   .get('/market', (req, res) => res.render('pages/market'))
+  .get('/home', (req, res) => res.render('pages/home-new'))
   .get('/tutorials', (req, res) => res.render('pages/tutorials'))
   .get('/cool', (req, res) => res.send(cool()))
+  .get('/blog', (req, res) => res.render('pages/blog'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 
