@@ -259,10 +259,12 @@ $(function() {
         var srcEnd =
           item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
         var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
+        if(src.includes("jpeg")){
         output +=
           '<div class="blog-media"><a href="blog-single-sidebar-right.html"><img class="" src="' +
           src +
           '"></div>';
+      }
         output +=
           '<div class="blog-item-body"><a href="' +
 
