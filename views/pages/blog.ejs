@@ -54,15 +54,15 @@
                     <div class="row">
                         
                         <div class="col-md-8">
-                            <h1 class="section-heading mb-10 mb-xs-0">Blog</h1>
+                            <h1 class="section-heading mb-10 mb-xs-0">Axie Blog</h1>
                             <div class="hs-line-4 uppercase">
-                                We share our best ideas in our blog
+                                We share the lastest Axies news and guides
                             </div>
                         </div>
                         
                         <div class="col-md-4 mt-30">
                             <div class="mod-breadcrumbs align-right">
-                                <a href="#">Home</a>&nbsp;/&nbsp;<a href="#">Blog</a>&nbsp;/&nbsp;<span>Classic</span>
+                                <a href="#">Home</a>&nbsp;/&nbsp;<a href="#">Blog</a>&nbsp;/&nbsp;<span>Axie</span>
                             </div>
                             
                         </div>
@@ -259,12 +259,10 @@ $(function() {
         var srcEnd =
           item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
         var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
-        if(src.includes("jpeg")){
         output +=
           '<div class="blog-media"><a href="blog-single-sidebar-right.html"><img class="" src="' +
           src +
           '"></div>';
-      }
         output +=
           '<div class="blog-item-body"><a href="' +
 
