@@ -41,7 +41,7 @@
         <!-- Page Wrap -->
         <div class="page" id="top">
 
-              <% include ../partials/nav-2.ejs %>
+            <% include ../partials/nav-new.ejs %>
             
             
 
@@ -81,7 +81,7 @@
                       <div class="row" id="jsonContent"></div>
                     </div>
                     <!-- /#blogContent-->
-                    <div class="text-center"><a class="btn btn-dark" id="loadBlogPosts" href="https://medium.com/feed/@chuckfrescoofficial">View All<span class="fa fa-angle-double-right"></span></a></div>
+                    <div class="text-center"><a class="btn btn btn-mod btn-color btn-large btn-circle" id="loadBlogPosts" href="https://medium.com/feed/@chuckfrescoofficial">View All <span class="fa fa-angle-double-right"></span></a></div>
                   </div>
                   <!-- /.container-->
                 </section>
@@ -156,45 +156,9 @@
             
             
             <!-- Foter -->
-            <footer class="small-section bg-dark footer pb-60">
-                <div class="container">
-                    
-                    <!-- Social Links -->
-                    <div class="footer-social-links mb-60 mb-xs-40">
-                        <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a href="#" title="Behance" target="_blank"><i class="fa fa-behance"></i></a>
-                        <a href="#" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        <a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
-                    </div>
-                    <!-- End Social Links -->  
-                    
-                    <!-- Footer Text -->
-                    <div class="footer-text">
-                        
-                        <!-- Copyright -->
-                        <div class="footer-copy">
-                            <a href="http://themeforest.net/user/theme-guru/portfolio" target="_blank">&copy; Stig 2015</a>
-                        </div>
-                        <!-- End Copyright -->
-                        
-                        <div class="footer-made">
-                            Made with love for great people.
-                        </div>
-                        
-                    </div>
-                    <!-- End Footer Text --> 
-                    
-                 </div>
-                 
-                 
-                 <!-- Top Link -->
-                 <div class="local-scroll">
-                     <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
-                 </div>
-                 <!-- End Top Link -->
-                 
-            </footer>
+     
+           
+              <% include ../partials/footer-new.ejs %>
             <!-- End Foter -->
         
         
@@ -250,7 +214,7 @@ $(function() {
           '<div class="blog-item-date"> <span class="date-num">' + 
           $.format.date(item.pubDate, "dd<br>MMM") +
           "</span></div>";
-        output += '<h2 class="blog-item-title"><a href="blog-single-sidebar-right.html">'+item.title + '</a></h2>';
+        output += '<h2 class="blog-item-title"><a href="' + item.link +'">'+item.title + '</a></h2>';
         output += '<div class="blog-item-data"><a href="#"><i class="fa fa-user"></i>' + item.author +'</a><span class="separator">&nbsp;</span><i class="fa fa-folder-open"></i><a href="">Design</a>, <a href="#">Branding</a><span class="separator">&nbsp;</span><a href="#"><i class="fa fa-comments"></i> 5 Comments</a></div>';
         var tagIndex = item.description.indexOf("<img"); // Find where the img tag starts
         var srcIndex =
@@ -260,16 +224,11 @@ $(function() {
           item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
         var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
         output +=
-          '<div class="blog-media"><a href="blog-single-sidebar-right.html"><img class="" src="' +
+          '<div class="blog-media"><img class="" src="' +
           src +
           '"></div>';
         output +=
-          '<div class="blog-item-body"><a href="' +
-
-          item.link +
-          '">' +
-          item.title +
-          "</a>";
+          '<div class="blog-item-body">';
         var yourString = item.description.replace(/<img[^>]*>/g, ""); //replace with your string.
         var maxLength = 300; // maximum number of characters to extract
         //trim the string to the maximum length
